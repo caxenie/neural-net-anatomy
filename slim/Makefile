@@ -20,5 +20,8 @@ netr : p4.c
 netrnoise : p5.c
 	$(CC) -o neural_net_regressor_noise p5.c $(CFLAGS)
 
-clean:
+clean :
 	rm single_neuron_* neural_net_*
+
+check : all
+	@echo "succeeded"
