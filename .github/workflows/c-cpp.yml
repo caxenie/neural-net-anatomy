@@ -14,6 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: make
-      run: slim/make
+      run: make
+      working-directory: slim
     - name: make check
-      run: slim/make check
+      run: make check
+      working-directory: slim
